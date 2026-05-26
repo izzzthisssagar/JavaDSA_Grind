@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodPratice {
+public class MethodPractice {
 
 
     String WelcomeMessage() {
@@ -16,8 +16,8 @@ public class MethodPratice {
 
     public  static void main(String[] args)
     {
-        MethodPratice pratice = new MethodPratice ();
-        String message = pratice.WelcomeMessage();
+        MethodPractice practice = new MethodPractice();
+        String message = practice.WelcomeMessage();
         System.out.println(message);
 
     }
