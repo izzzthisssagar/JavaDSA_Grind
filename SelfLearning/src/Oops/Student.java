@@ -2,10 +2,33 @@ package Oops;
 
 public class Student {
     //attributes
-    public String name;
-    public int age;
-    public int id;
-    public int nos;
+    private String name;
+    private int age;
+    private int id;
+    private int nos;
+    private String gf;
+
+    public String GetName() {
+        return this.name;
+    }
+    public int GetAge() {
+        return this.age;
+    }
+    public int SetAge(int newAge) {
+
+        //We can add extra layer of authentication
+        return this.age = newAge;
+    }
+    public int GetId() {
+        return this.id;
+    }
+    public int GetNos() {
+        return this.nos;
+    }
+    public String GetGf() {
+        return this.gf;
+    }
+
 
     //Default constructor to set the value of the attributes
 public Student()
@@ -15,7 +38,7 @@ public Student()
 
 //Parameterized Constructor
 
-    public Student(int id, String name, int age , int nos)
+    public Student(int id, String name, int age , int nos , String gf)
     {
         System.out.println("Student parameterized constructor called");
         this.id = id;
@@ -32,6 +55,7 @@ public Student()
         this.name = scope.name;
         this.age = scope.age;
         this.nos = scope.nos;
+        this.gf = scope.gf;
     }
 
 
@@ -50,6 +74,13 @@ public Student()
     {
         System.out.println( name + "Bunking");
     }
+
+    private  void GfChatting()
+    {
+        System.out.println( name + "GfChatting");
+    }
+
+
 
 }
 

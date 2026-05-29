@@ -22,7 +22,7 @@ public class App {
 
         //Parameterized Constructor
 
-        Student A = new Student( 1 ,"Sagar Thapa", 22 ,5);
+        //Student A = new Student( 1 ,"Sagar Thapa", 22 ,5 , "koi xaina");
 //        System.out.println(A.name);
 //        System.out.println(A.age);
 //        System.out.println(A.nos);
@@ -34,13 +34,26 @@ public class App {
 
         //Copy constructor
 
-        Student B = new Student(A);
-        System.out.println(B.name);
-        System.out.println(B.age);
-        System.out.println(B.nos);
+//        Student B = new Student(A);
+//        System.out.println(B.name);
+//        System.out.println(B.age);
+//        System.out.println(B.nos);
+//
+//        B.Sleep();
 
-        B.Sleep();
+        //Encapsulation
 
+        Student A = new Student( 1 ,"Sagar Thapa", 22 ,5 , "koi xaina");
+                System.out.println(A.GetName());
+        System.out.println(A.GetAge());
+        System.out.println(A.GetNos());
+        System.out.println(A.GetName());
+        System.out.println(A.GetGf());
+
+        System.out.println(A.SetAge(55));
+
+        A.Bunk();
+       // A.GfChatting();
 
 
 
